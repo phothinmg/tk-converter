@@ -1,0 +1,32 @@
+{
+  "name": "tk-converter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "check": "biome check --write src && biome format --write src",
+    "build": "./build.js"
+  },
+  "keywords": ["Showdown js","Markdown"],
+  "author": "Pho Thin Mg",
+  "license": "MIT",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "lwe8-build": "^0.1.6",
+    "shiki": "^3.1.0",
+    "showdown": "^2.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.9",
+    "@types/showdown": "^2.0.6",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome"
+    ]
+  }
+}
