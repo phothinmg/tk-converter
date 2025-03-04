@@ -1,13 +1,29 @@
 {
   "name": "tk-converter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "scripts": {
     "check": "biome check --write src && biome format --write src",
     "build": "./build.js"
   },
-  "keywords": ["Showdown js","Markdown"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phothinmg/tk-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phothinmg/tk-converter/issues"
+  },
+  "keywords": [
+    "Showdown js",
+    "Markdown"
+  ],
   "author": "Pho Thin Mg",
   "license": "MIT",
   "packageManager": "pnpm@10.4.1",
