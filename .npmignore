@@ -6,4 +6,4 @@ a.md
 src
 biome.jsonc
 build.js
-pnpm-lock.yaml
+package-lock.json
